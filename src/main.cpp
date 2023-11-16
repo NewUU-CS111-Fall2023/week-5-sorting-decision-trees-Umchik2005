@@ -9,6 +9,7 @@
 #include "task_1.h"
 #include "task_2.h"
 #include "task_3.h"
+#include "task_4.h"
 
 int main() {
     std::cout << "Task 1" << std::endl;
@@ -69,6 +70,14 @@ int main() {
         std::cout << s << " ";
     }
     std::cout << std::endl;
+    std::cout << "////////////////////////////////////////////" << std::endl;
+
+    std::cout << "Task 4" << std::endl;
+    int numbers[] = {5, 2, 8, 1, 4, 6};
+    int size4 = sizeof(numbers) / sizeof(numbers[0]);
+
+    int numOfSmallerNum = numberOfSmallerElements(numbers, size4);
+    std::cout << numOfSmallerNum << std::endl;
     std::cout << "////////////////////////////////////////////" << std::endl;
     // std::cout << "Task 1" << std::endl;
     // // call for task 1
