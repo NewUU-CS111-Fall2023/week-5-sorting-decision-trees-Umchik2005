@@ -8,6 +8,7 @@
 #include <string>
 #include "task_1.h"
 #include "task_2.h"
+#include "task_3.h"
 
 int main() {
     std::cout << "Task 1" << std::endl;
@@ -50,6 +51,25 @@ int main() {
     std::cout << std::endl;
     std::cout << "////////////////////////////////////////////" << std::endl;
     
+    std::cout << "Task 3" << std::endl;
+
+    std::string soldiers[] = {"Alpha", "Bravo", "Charlie", "Delta", "Echo"};
+    int size3 = sizeof(soldiers) / sizeof(soldiers[0]);
+    
+    std::cout << "Before sorting: " << std::endl;
+    for(std::string s: soldiers){
+        std::cout << s << " ";
+    }
+    std::cout << std::endl;
+
+    std::cout << "After sorting: " << std:: endl;
+    swappingSoldiers(soldiers, size3);
+
+    for(std::string s: soldiers){
+        std::cout << s << " ";
+    }
+    std::cout << std::endl;
+    std::cout << "////////////////////////////////////////////" << std::endl;
     // std::cout << "Task 1" << std::endl;
     // // call for task 1
     // std::cout << "Task 2" << std::endl;
