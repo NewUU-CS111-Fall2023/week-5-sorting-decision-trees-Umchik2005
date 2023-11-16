@@ -1,16 +1,17 @@
 /*
- * Author:
- * Date:
- * Name:
+ * Author: Muhammad Umar
+ * Date: November 16, 2023
+ * Name: Muhammad Umar
  */
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include "task_1.h"
 #include "task_2.h"
 #include "task_3.h"
 #include "task_4.h"
-
+#include "task_5.h"
 int main() {
     std::cout << "Task 1" << std::endl;
     std::string booksTitle[] = {"Catcher in the Rye", 
@@ -79,6 +80,18 @@ int main() {
     int numOfSmallerNum = numberOfSmallerElements(numbers, size4);
     std::cout << numOfSmallerNum << std::endl;
     std::cout << "////////////////////////////////////////////" << std::endl;
+    
+    std::cout << "Task 5" << std::endl;
+
+    std::vector<std::vector<char>> colorMatrix = {
+            {'b', 'y', 'w', 'b'},
+            {'y', 'w', 'b', 'y'},
+            {'w', 'b', 'y', 'w'},
+            {'b', 'y', 'w', 'b'}
+    };
+
+    std::cout << "Visual representation of colors: " <<std::endl;
+    displayColors(colorMatrix);
     // std::cout << "Task 1" << std::endl;
     // // call for task 1
     // std::cout << "Task 2" << std::endl;
